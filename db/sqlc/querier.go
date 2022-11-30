@@ -7,7 +7,7 @@ package db
 import (
 	"context"
 )
-
+// Acesso por queries ao banco de dados
 type Querier interface {
 	CreateProduct(ctx context.Context, arg CreateProductParams) (Product, error)
 	DeleteProduct(ctx context.Context, id int32) error
