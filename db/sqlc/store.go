@@ -7,7 +7,7 @@ type StoreExec struct {
 	*Queries
 }
 
-func ExecuteNewStore(db *sql.DB) *StoreExec {
+func NewStoreExec(db *sql.DB) *StoreExec {
 	return &StoreExec{
 		db:      db,
 		Queries: New(db),
